@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background:#EEEEEE;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+ul, ol{
+    list-style: none;
+}
+
+.menu li a {
+    display: flex;
+    margin-right: 10px;
+}
+
+.menu > li {
+    float:left;
+}
+
+.menu li a:hover{
+    background-color:#787A91 ;
+}
+
+.menu li ul {
+    display:none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.menu li:hover > ul{
+    display: block;
+    background-color: #EEEEEE;
+}
+.menu a {
+    display: block;
+    padding: 20px 20px;
+    color: #0F044C;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    background: #141E61;
+}
+
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header {
+    height: 60vh !important;
+    background: url(img/distrito-central-negocios-singapur.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-family: Arial;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #0F044C;
+}
+h1 {
+    margin-bottom: 60px;
+    font-family: Arial;
+    font-size: 50px;
+    color:black;
+    padding: 0 100px;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-family: Arial;
+    color:black;
+    padding: 0 100px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #141E61;
+    color: #0F044C;
+    text-decoration: none;
+    background: #787A91;
+}
+
+.btn:hover {
+    background: none;    
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px;
+}
+
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau {
+    padding: 30px;
+    background: #787A91
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    text-align: center;
+
+}
+
+.box-container .box {
+    height: 11rem;
+    width: 17rem;
+    background: #EEEEEE;
+    text-align:match-parent;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 2rem;   
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 30%;
+    color: #ECB365;
+    background: #04293A;
+    font-size: 2rem;
+    margin: 2rem 0;
+
+}
+
+.box-container .box h3 {
+    font-size: 25px;
+    text-align-last:center;
+    color: #0F044C;
+}
+
+.about {
+    background: #EEEEEE;
+}
+
+.Mision {
+    background-color:#787A91;
+    text-align: center;
+}
+.Valores {
+    background-color:#787A91;
+    text-align: center;
+}
+
+
+.contact {
+    padding-top: 20px;
+    background: #EEEEEE;
+    padding-bottom: 0;
+
+}
+
+
+/*@media (max-width: 768px) {
+
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau {
+        height: 100vh;
+    }
+
+    .menu {
+        display: none;
+    }   
+}*/
+
+@media (max-width: 767px) {
+    .head {
+      height: auto;
+      position: static;
+    }
+    
+    .menu {
+      display: none;
+    }
+    
+    .logo {
+      margin: 20px 0;
+    }
+    
+    .header {
+      height: 40vh !important;
+    }
+    
+    .title {
+      font-size: 40px;
+    }
+    
+    h1 {
+      font-size: 30px;
+      padding: 0 20px;
+    }
+    
+    p {
+      font-size: 18px;
+      padding: 0 20px;
+    }
+    
+    .btn {
+      margin: 10px 0;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    
+    .box-container .box {
+      height: 9rem;
+      width: 14rem;
+      margin: 1rem;
+    }
+    
+    .box-container .box i {
+      height: 2rem;
+      width: 2rem;
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+    
+    .box-container .box h3 {
+      font-size: 20px;
+    }
+  }

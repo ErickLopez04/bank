@@ -1,0 +1,201 @@
+<!-- declaración define que este documento es un documento HTML5 -->
+<!DOCTYPE html>
+<!-- <html>elemento es el elemento raíz de una página HTML. -->
+<html lang="en">
+  <!-- El <head>elemento contiene metainformación sobre la página HTML. -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <!--vincular a una hoja de estilo-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- El <title>elemento especifica un título para la página HTML -->
+    <title>Pagina web bank</title>
+  </head>
+  <!--<body>elemento define el cuerpo del documento y es un contenedor de todos los contenidos visibles-->
+  <body>
+    <!--inicio <div> del la cabezera.-->
+    <div class="head">
+      <!--class para para acceder desde el css y modificar -->
+      <div class="logo">
+        <a href="#"></a>
+        <!--<img> incrustar una imagen portada para el banco-->
+        <img src="img/bancos.png" height="63px" width="125%" alt="banco" />
+      </div>
+      <!--lista desordenada <ul> y el contenido <li>-->
+      <!--inicio de la lista para los menus-->
+      <ul class="menu">
+        <li>
+          <a href="#">Inicio</a>
+        </li>
+        <li>
+          <a href="#">Nosotros</a>
+          <ul>
+            <li><a href="#">Historia</a></li>
+            <li><a href="#">Mision</a></li>
+            <li><a href="#">Vision</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Contactos</a>
+          <ul>
+            <li><a href="#">Numero central</a></li>
+            <li><a href="#">Servivio cliente</a></li>
+            <li><a href="#">Correo</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Productos</a>
+          <ul>
+            <li>
+              <a
+                href="https://www.banreservas.com/personal/tarjetas/crédito/tarjeta-de-crédito-visa-ser"
+                >Tarjeta de Creditos</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.banreservas.com/personal/prestamos/personales/préstamos-de-consumo"
+                >Prestamos</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.banreservas.com/personal/inversiones/certificados/certificado-financiero-en-pesos"
+                >Certificado Financiero</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Acceder</a>
+          <ul>
+            <li><a href="#">TU BANCO PERSONAS</a></li>
+            <li><a href="#">TU BANCO EMPRESAS</a></li>
+            <li><a href="#">ADMINISTRAR CUENTAS</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!--final de la lista para los menus-->
+    </div>
+    <!--fin del <div> del la cabezera.-->
+    <!--contenido de encabezdo .-->
+    <header class="content header">
+      <h2 class="title">Bank Lopez</h2>
+      <p>¡Bienvenido a nuestro banco!.</p>
+
+      <div class="btn-home">
+        <a href="#" class="btn">Saber mas</a>
+      </div>
+    </header>
+    <!--La <section>etiqueta define una sección en un documento.-->
+    <!--inicio de primera seccion-->
+    <section class="Content sau">
+      <h2 class="title">Productos</h2>
+      <p>
+        Nuestro banco ofrece una variedad de productos y servicios para ayudarlo
+        a alcanzar sus objetivos financieros. Estos son algunos de los productos
+        que ofrecemos:
+      </p>
+
+      <div class="box-container">
+        <div class="box">
+          <img
+            src="img/tarjetas-de-credito.png"
+            height="100px"
+            width="40%"
+            alt="credito"
+          />
+          <h3>Tarjeta de Creditos</h3>
+        </div>
+
+        <div class="box">
+          <img
+            src="img/certificado (1).png"
+            height="100px"
+            width="40%"
+            alt="credito"
+          />
+          <h3>Certificado Financiero</h3>
+        </div>
+
+        <div class="box">
+          <img
+            src="img/pedir-prestado.png"
+            height="100px"
+            width="40%"
+            alt="credito"
+          />
+          <h3>Prestamos</h3>
+        </div>
+      </div>
+    </section>
+    <!--final de primera seccion-->
+    <!--inicio de segunda seccion-->
+    <section class="content about">
+      <h2 class="title">Nosotros</h2>
+      <h1>Historia</h1>
+      <p>
+        Nuestro banco fue fundado en 2023 con el objetivo de brindar a nuestra
+        comunidad servicios bancarios de alta calidad. Desde entonces, hemos
+        crecido para atender a clientes en Republica dominicana, ofreciendo una
+        gama de productos y servicios diseñados para ayudar a las personas y
+        empresas a alcanzar sus objetivos financieros.
+      </p>
+
+      <a href="#" class="btn">Saber mas</a>
+    </section>
+    <!--final de segunda seccion-->
+    <!--inicio de tercera seccion-->
+    <section class="content Mision">
+      <article class="contain">
+        <h2 class="title">Mision</h2>
+        <p>
+          Nuestra misión es brindar a nuestros clientes servicios bancarios
+          convenientes, confiables y seguros que satisfagan sus necesidades y
+          superen sus expectativas. Nos esforzamos por construir relaciones
+          duraderas con nuestros clientes y ser un socio confiable en su viaje
+          financiero.
+        </p>
+      </article>
+    </section>
+    <!--final de tercera seccion-->
+    <!--inicio de cuarta seccion-->
+    <section class="content Valores">
+      <article class="contain">
+        <h2 class="title">Valores</h2>
+        <p>
+          En nuestro banco, nos guiamos por un conjunto de valores fundamentales
+          que informan todo lo que hacemos:<br />
+          Integridad:<br />
+          Creemos en operar con la máxima honestidad y transparencia en todas
+          nuestras interacciones con clientes, empleados y partes
+          interesadas.<br />
+          Excelencia:<br />
+          Estamos comprometidos a ofrecer productos y servicios de alta calidad
+          que superen las expectativas de nuestros clientes.<br />
+          Innovación:<br />
+          adoptamos nuevas ideas y tecnologías que nos ayudan a brindar un mejor
+          servicio a nuestros clientes y mantenernos a la vanguardia en la
+          industria bancaria que cambia rápidamente.<br />
+          ¡Esperamos poder servirle
+        </p>
+      </article>
+    </section>
+    <!--final de cuarta seccion-->
+    <!--inicio de quinta seccion-->
+    <section class="content contact">
+      <h2 class="title">Contacto</h2>
+      <p>Telefono: 809-468-5221</p>
+      <p>Ubicacion</p>
+      <figure class="map">
+        <img src="img/mapa.png" height="200px" width="100%" alt="mapa" />
+      </figure>
+    </section>
+    <!--final de quinta seccion-->
+  </body>
+</html>
